@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #061152;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* TITULOS */
+h2 {
+    color: #061152;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* MUSIC LIST */
+.music-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.music-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.music-card h3 {
+    color: #061152;
+    margin-bottom: 10px;
+}
+
+.music-card p {
+    margin-bottom: 15px;
+}
+
+/* AUDIO */
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.music-card a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #061152;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.music-card a:hover {
+    background: #0a1fa8;
+}
+
+/* FOOTER */
+footer {
+    background: #061152;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}

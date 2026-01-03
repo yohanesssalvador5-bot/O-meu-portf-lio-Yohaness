@@ -1,0 +1,343 @@
+/* =========================
+   RESET E BASE
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Elms Sans', sans-serif;
+    line-height: 1.6;
+    color: #061152;
+    background-color: #ffffff;
+}
+
+/* Espaço para header fixo */
+main {
+    margin-top: 80px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+header {
+    background-color: #061152;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.nav-bar li {
+    margin: 0 1rem;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #ffffff;
+    color: #061152;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #081a68 0%, #08158d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+.hero-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(135, 92, 255, 0.9);
+    margin-bottom: 25px;
+}
+
+.minha-foto {
+  width: 200px;
+  border-radius: 50%;
+  /* Animação automática */
+  animation: dance 4s infinite ease-in-out;
+}
+
+/* Keyframes da dança (cima e baixo) */
+@keyframes dance {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* =========================
+   BOTÃO CTA
+========================= */
+.cta-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #061152;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #061152;
+    color: #2a63ff;
+    border: 2px solid #ffffff;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+section {
+    padding: 80px 0;
+}
+
+/* =========================
+   PROJETOS / CARDS
+========================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #f5f6fa;
+    padding: 25px;
+    border-radius: 10 8px5px;
+    box-shadow: 0 8px 20px rgb(52, 31, 233);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+
+
+.skills {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.skill-bar {
+  background: #e6e6e6;
+  height: 28px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: #061152;
+  width: 0;
+  border-radius: 20px;
+  transition: width 2.2s ease-in-out; /* animação suave */
+}
+
+.skill-text {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #061152;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CONTATOS
+========================= */
+.contatos {
+    background-color: #f5f6fa;
+}
+
+.contatos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.contatos-info h2 {
+    color: #061152;
+    margin-bottom: 10px;
+}
+
+.contatos-info p {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* FORMULÁRIO */
+.formulario-contato {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.formulario-contato textarea {
+    resize: none;
+    height: 120px;
+}
+
+.formulario-contato button {
+    background-color: #061152;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario-contato button:hover {
+    background-color: #081a68;
+}
+
+/* =========================
+   ÍCONES COM HOVER
+========================= */
+.contatos-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.contatos-icons a {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #061152;
+    font-size: 22px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.contatos-icons a:hover {
+    background-color: #061152;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.project-card .buttonn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #061152;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-card .buttonn:hover {
+    background-color: #081a68;
+}
+
+.project-card .buttonn:hover {
+    background-color: #081a68;
+}
+
+.shadow-box {
+    background-color: #e7e4e4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(12, 2, 71, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.shadow-box:hover {
+    transform: translateY(-5px);
+}
+.shadow-box:hover {
+    box-shadow: 8px 8px 25px rgb(16, 3, 72); /* sombra colorida ao passar o mouse */
+}
